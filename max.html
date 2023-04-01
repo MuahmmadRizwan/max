@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1>Javascript</h1>
+    <br><br><br>
+    <h1>Rizwan</h1>
+    <script>
+        function findMax() {
+  const numbersString = prompt("Enter Number:");
+  const numbersArray = numbersString.split(",");
+  
+  let max = Number(numbersArray[0].trim());
+  
+  for (let i = 1; i < numbersArray.length; i++) {
+    const number = Number(numbersArray[i].trim());
+    
+    if (!isNaN(number) && number > max) {
+      max = number;
+    }
+  }
+
+  
+  return max;
+}
+const max = findMax();
+document.write("your max number from your array is " + max); // Output: the maximum number entered by the user
+
+    </script>
+    </center>
+</body>
+</html>
